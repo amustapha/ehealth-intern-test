@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact form</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+            body {
+                padding: 16px;
+            }
+            input[type=text],
+            input[type=email],
+            textarea {
+                border: 1px solid #888;
+                padding: 8px;
+                margin: 4px 0;
+                border-radius: 4px;
+                width: 100%;
+                display: block;
+            }
+
+            label {
+                margin: 16px 0 0;
+                display: block;
+            }
+
+            button {
+                border: none;
+                padding: 16px 48px;
+                background: #0085B0;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 12pt;
+                font-weight: bold;
+                color: #fff;
+                margin: 8px 0 0;
+                width: 100%;
+            }
+
+            h2 {
+                color: #0085B0;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            @media screen and (min-width: 550px) {
+                .wrapper {
+                    width: 500px;
+                    margin: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h2>Contact Form</h2>
+
+            <div class="form-set">
+                <label for="fullname">Full name:</label>
+                <input type="text" id="fullname" placeholder="e.g. Abdulhakeem Mustapha" />
+            </div>
+            <div class="form-set">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="e.g. abdulhakeemmustapha@gmail.com" />
+            </div>
+            <div class="form-set">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" placeholder="What are your concerns" />
+            </div>
+            <div class="form-set">
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Tell us the details please..."></textarea>
+            </div>
+            <button>Submit</button>
+        </div>
+    </body>
+</html>
