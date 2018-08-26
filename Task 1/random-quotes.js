@@ -8,7 +8,7 @@ displayRandomQuote = function () {
         5: "Without requirements or design, programming is the art of adding bugs to an empty 'text' file."
 
     }
-    var rand = Math.floor(Math.random() * Object.keys(quotes).length);
+    var rand = Math.floor(Math.random() * Math.floor(Object.keys(quotes).length / 2)) * 2 + 1;
     console.log(quotes[rand]);
 }
 displayRandomQuote();
